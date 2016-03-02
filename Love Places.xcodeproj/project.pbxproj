@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8894B9531C8744FE00625DAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894B9521C8744FE00625DAC /* main.m */; };
+		8894B9561C8744FE00625DAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894B9551C8744FE00625DAC /* AppDelegate.m */; };
+		8894B9591C8744FE00625DAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894B9581C8744FE00625DAC /* ViewController.m */; };
+		8894B95C1C8744FE00625DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8894B95A1C8744FE00625DAC /* Main.storyboard */; };
+		8894B95F1C8744FE00625DAC /* Love_Places.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8894B95D1C8744FE00625DAC /* Love_Places.xcdatamodeld */; };
+		8894B9611C8744FE00625DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8894B9601C8744FE00625DAC /* Assets.xcassets */; };
+		8894B9641C8744FE00625DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8894B9621C8744FE00625DAC /* LaunchScreen.storyboard */; };
+		8894B96F1C8744FE00625DAC /* Love_PlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894B96E1C8744FE00625DAC /* Love_PlacesTests.m */; };
+		8894B97A1C8744FE00625DAC /* Love_PlacesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894B9791C8744FE00625DAC /* Love_PlacesUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8894B96B1C8744FE00625DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8894B9461C8744FE00625DAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8894B94D1C8744FE00625DAC;
+			remoteInfo = "Love Places";
+		};
+		8894B9761C8744FE00625DAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8894B9461C8744FE00625DAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8894B94D1C8744FE00625DAC;
+			remoteInfo = "Love Places";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8894B94E1C8744FE00625DAC /* Love Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Love Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8894B9521C8744FE00625DAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8894B9541C8744FE00625DAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8894B9551C8744FE00625DAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8894B9571C8744FE00625DAC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8894B9581C8744FE00625DAC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8894B95B1C8744FE00625DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8894B95E1C8744FE00625DAC /* Love_Places.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Love_Places.xcdatamodel; sourceTree = "<group>"; };
+		8894B9601C8744FE00625DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8894B9631C8744FE00625DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8894B9651C8744FE00625DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8894B96A1C8744FE00625DAC /* Love PlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Love PlacesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8894B96E1C8744FE00625DAC /* Love_PlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Love_PlacesTests.m; sourceTree = "<group>"; };
+		8894B9701C8744FE00625DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8894B9751C8744FE00625DAC /* Love PlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Love PlacesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8894B9791C8744FE00625DAC /* Love_PlacesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Love_PlacesUITests.m; sourceTree = "<group>"; };
+		8894B97B1C8744FE00625DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8894B94B1C8744FE00625DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8894B9671C8744FE00625DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8894B9721C8744FE00625DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8894B9451C8744FE00625DAC = {
+			isa = PBXGroup;
+			children = (
+				8894B9501C8744FE00625DAC /* Love Places */,
+				8894B96D1C8744FE00625DAC /* Love PlacesTests */,
+				8894B9781C8744FE00625DAC /* Love PlacesUITests */,
+				8894B94F1C8744FE00625DAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8894B94F1C8744FE00625DAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8894B94E1C8744FE00625DAC /* Love Places.app */,
+				8894B96A1C8744FE00625DAC /* Love PlacesTests.xctest */,
+				8894B9751C8744FE00625DAC /* Love PlacesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8894B9501C8744FE00625DAC /* Love Places */ = {
+			isa = PBXGroup;
+			children = (
+				8894B9541C8744FE00625DAC /* AppDelegate.h */,
+				8894B9551C8744FE00625DAC /* AppDelegate.m */,
+				8894B9571C8744FE00625DAC /* ViewController.h */,
+				8894B9581C8744FE00625DAC /* ViewController.m */,
+				8894B95A1C8744FE00625DAC /* Main.storyboard */,
+				8894B9601C8744FE00625DAC /* Assets.xcassets */,
+				8894B9621C8744FE00625DAC /* LaunchScreen.storyboard */,
+				8894B9651C8744FE00625DAC /* Info.plist */,
+				8894B95D1C8744FE00625DAC /* Love_Places.xcdatamodeld */,
+				8894B9511C8744FE00625DAC /* Supporting Files */,
+			);
+			path = "Love Places";
+			sourceTree = "<group>";
+		};
+		8894B9511C8744FE00625DAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8894B9521C8744FE00625DAC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8894B96D1C8744FE00625DAC /* Love PlacesTests */ = {
+			isa = PBXGroup;
+			children = (
+				8894B96E1C8744FE00625DAC /* Love_PlacesTests.m */,
+				8894B9701C8744FE00625DAC /* Info.plist */,
+			);
+			path = "Love PlacesTests";
+			sourceTree = "<group>";
+		};
+		8894B9781C8744FE00625DAC /* Love PlacesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8894B9791C8744FE00625DAC /* Love_PlacesUITests.m */,
+				8894B97B1C8744FE00625DAC /* Info.plist */,
+			);
+			path = "Love PlacesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8894B94D1C8744FE00625DAC /* Love Places */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8894B97E1C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love Places" */;
+			buildPhases = (
+				8894B94A1C8744FE00625DAC /* Sources */,
+				8894B94B1C8744FE00625DAC /* Frameworks */,
+				8894B94C1C8744FE00625DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Love Places";
+			productName = "Love Places";
+			productReference = 8894B94E1C8744FE00625DAC /* Love Places.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8894B9691C8744FE00625DAC /* Love PlacesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8894B9811C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love PlacesTests" */;
+			buildPhases = (
+				8894B9661C8744FE00625DAC /* Sources */,
+				8894B9671C8744FE00625DAC /* Frameworks */,
+				8894B9681C8744FE00625DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8894B96C1C8744FE00625DAC /* PBXTargetDependency */,
+			);
+			name = "Love PlacesTests";
+			productName = "Love PlacesTests";
+			productReference = 8894B96A1C8744FE00625DAC /* Love PlacesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8894B9741C8744FE00625DAC /* Love PlacesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8894B9841C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love PlacesUITests" */;
+			buildPhases = (
+				8894B9711C8744FE00625DAC /* Sources */,
+				8894B9721C8744FE00625DAC /* Frameworks */,
+				8894B9731C8744FE00625DAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8894B9771C8744FE00625DAC /* PBXTargetDependency */,
+			);
+			name = "Love PlacesUITests";
+			productName = "Love PlacesUITests";
+			productReference = 8894B9751C8744FE00625DAC /* Love PlacesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8894B9461C8744FE00625DAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = menghan2;
+				TargetAttributes = {
+					8894B94D1C8744FE00625DAC = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					8894B9691C8744FE00625DAC = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8894B94D1C8744FE00625DAC;
+					};
+					8894B9741C8744FE00625DAC = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8894B94D1C8744FE00625DAC;
+					};
+				};
+			};
+			buildConfigurationList = 8894B9491C8744FE00625DAC /* Build configuration list for PBXProject "Love Places" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8894B9451C8744FE00625DAC;
+			productRefGroup = 8894B94F1C8744FE00625DAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8894B94D1C8744FE00625DAC /* Love Places */,
+				8894B9691C8744FE00625DAC /* Love PlacesTests */,
+				8894B9741C8744FE00625DAC /* Love PlacesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8894B94C1C8744FE00625DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8894B9641C8744FE00625DAC /* LaunchScreen.storyboard in Resources */,
+				8894B9611C8744FE00625DAC /* Assets.xcassets in Resources */,
+				8894B95C1C8744FE00625DAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8894B9681C8744FE00625DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8894B9731C8744FE00625DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8894B94A1C8744FE00625DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8894B9591C8744FE00625DAC /* ViewController.m in Sources */,
+				8894B95F1C8744FE00625DAC /* Love_Places.xcdatamodeld in Sources */,
+				8894B9561C8744FE00625DAC /* AppDelegate.m in Sources */,
+				8894B9531C8744FE00625DAC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8894B9661C8744FE00625DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8894B96F1C8744FE00625DAC /* Love_PlacesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8894B9711C8744FE00625DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8894B97A1C8744FE00625DAC /* Love_PlacesUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8894B96C1C8744FE00625DAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8894B94D1C8744FE00625DAC /* Love Places */;
+			targetProxy = 8894B96B1C8744FE00625DAC /* PBXContainerItemProxy */;
+		};
+		8894B9771C8744FE00625DAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8894B94D1C8744FE00625DAC /* Love Places */;
+			targetProxy = 8894B9761C8744FE00625DAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8894B95A1C8744FE00625DAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8894B95B1C8744FE00625DAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8894B9621C8744FE00625DAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8894B9631C8744FE00625DAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8894B97C1C8744FE00625DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8894B97D1C8744FE00625DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8894B97F1C8744FE00625DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Love Places/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "menghan.xyz.Love-Places";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8894B9801C8744FE00625DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Love Places/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "menghan.xyz.Love-Places";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8894B9821C8744FE00625DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Love PlacesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "menghan.xyz.Love-PlacesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Love Places.app/Love Places";
+			};
+			name = Debug;
+		};
+		8894B9831C8744FE00625DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Love PlacesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "menghan.xyz.Love-PlacesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Love Places.app/Love Places";
+			};
+			name = Release;
+		};
+		8894B9851C8744FE00625DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Love PlacesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "menghan.xyz.Love-PlacesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Love Places";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8894B9861C8744FE00625DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Love PlacesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "menghan.xyz.Love-PlacesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Love Places";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8894B9491C8744FE00625DAC /* Build configuration list for PBXProject "Love Places" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8894B97C1C8744FE00625DAC /* Debug */,
+				8894B97D1C8744FE00625DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8894B97E1C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love Places" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8894B97F1C8744FE00625DAC /* Debug */,
+				8894B9801C8744FE00625DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8894B9811C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love PlacesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8894B9821C8744FE00625DAC /* Debug */,
+				8894B9831C8744FE00625DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8894B9841C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love PlacesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8894B9851C8744FE00625DAC /* Debug */,
+				8894B9861C8744FE00625DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8894B95D1C8744FE00625DAC /* Love_Places.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8894B95E1C8744FE00625DAC /* Love_Places.xcdatamodel */,
+			);
+			currentVersion = 8894B95E1C8744FE00625DAC /* Love_Places.xcdatamodel */;
+			path = Love_Places.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8894B9461C8744FE00625DAC /* Project object */;
+}
