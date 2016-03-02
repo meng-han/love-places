@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FA34DF961ED725F631F1C20 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34E43B63FC807E68E1451955 /* libPods.a */; };
 		8894B9531C8744FE00625DAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894B9521C8744FE00625DAC /* main.m */; };
 		8894B9561C8744FE00625DAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894B9551C8744FE00625DAC /* AppDelegate.m */; };
 		8894B9591C8744FE00625DAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8894B9581C8744FE00625DAC /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A9B01C6E10E8682CE6673B1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		34E43B63FC807E68E1451955 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8894B94E1C8744FE00625DAC /* Love Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Love Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8894B9521C8744FE00625DAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8894B9541C8744FE00625DAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		8894B9751C8744FE00625DAC /* Love PlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Love PlacesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8894B9791C8744FE00625DAC /* Love_PlacesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Love_PlacesUITests.m; sourceTree = "<group>"; };
 		8894B97B1C8744FE00625DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF5054555A9221B98F6B77C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA34DF961ED725F631F1C20 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65B6C42C659518BB25ADFCAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A9B01C6E10E8682CE6673B1 /* Pods.debug.xcconfig */,
+				DEF5054555A9221B98F6B77C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8894B9451C8744FE00625DAC = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,8 @@
 				8894B96D1C8744FE00625DAC /* Love PlacesTests */,
 				8894B9781C8744FE00625DAC /* Love PlacesUITests */,
 				8894B94F1C8744FE00625DAC /* Products */,
+				65B6C42C659518BB25ADFCAB /* Pods */,
+				A39BEE2BE3B084B29A068351 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +119,11 @@
 		8894B9501C8744FE00625DAC /* Love Places */ = {
 			isa = PBXGroup;
 			children = (
-				8894B9541C8744FE00625DAC /* AppDelegate.h */,
-				8894B9551C8744FE00625DAC /* AppDelegate.m */,
 				8894B9571C8744FE00625DAC /* ViewController.h */,
 				8894B9581C8744FE00625DAC /* ViewController.m */,
 				8894B95A1C8744FE00625DAC /* Main.storyboard */,
 				8894B9601C8744FE00625DAC /* Assets.xcassets */,
 				8894B9621C8744FE00625DAC /* LaunchScreen.storyboard */,
-				8894B9651C8744FE00625DAC /* Info.plist */,
-				8894B95D1C8744FE00625DAC /* Love_Places.xcdatamodeld */,
 				8894B9511C8744FE00625DAC /* Supporting Files */,
 			);
 			path = "Love Places";
@@ -120,6 +132,10 @@
 		8894B9511C8744FE00625DAC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8894B9541C8744FE00625DAC /* AppDelegate.h */,
+				8894B9551C8744FE00625DAC /* AppDelegate.m */,
+				8894B9651C8744FE00625DAC /* Info.plist */,
+				8894B95D1C8744FE00625DAC /* Love_Places.xcdatamodeld */,
 				8894B9521C8744FE00625DAC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,6 +159,14 @@
 			path = "Love PlacesUITests";
 			sourceTree = "<group>";
 		};
+		A39BEE2BE3B084B29A068351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34E43B63FC807E68E1451955 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8894B97E1C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love Places" */;
 			buildPhases = (
+				7C5C739AEDBB526160679DA6 /* Check Pods Manifest.lock */,
 				8894B94A1C8744FE00625DAC /* Sources */,
 				8894B94B1C8744FE00625DAC /* Frameworks */,
 				8894B94C1C8744FE00625DAC /* Resources */,
+				5E7C04E584C5148316BD7591 /* Embed Pods Frameworks */,
+				9736D28B311B76209EB79E94 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E7C04E584C5148316BD7591 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C5C739AEDBB526160679DA6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9736D28B311B76209EB79E94 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8894B94A1C8744FE00625DAC /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		8894B97F1C8744FE00625DAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A9B01C6E10E8682CE6673B1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Love Places/Info.plist";
@@ -424,6 +500,7 @@
 		};
 		8894B9801C8744FE00625DAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF5054555A9221B98F6B77C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Love Places/Info.plist";
@@ -500,6 +577,7 @@
 				8894B9801C8744FE00625DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8894B9811C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love PlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +586,7 @@
 				8894B9831C8744FE00625DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8894B9841C8744FE00625DAC /* Build configuration list for PBXNativeTarget "Love PlacesUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +595,7 @@
 				8894B9861C8744FE00625DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
