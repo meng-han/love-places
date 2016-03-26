@@ -122,8 +122,6 @@
 				8894B9571C8744FE00625DAC /* ViewController.h */,
 				8894B9581C8744FE00625DAC /* ViewController.m */,
 				8894B95A1C8744FE00625DAC /* Main.storyboard */,
-				8894B9601C8744FE00625DAC /* Assets.xcassets */,
-				8894B9621C8744FE00625DAC /* LaunchScreen.storyboard */,
 				8894B9511C8744FE00625DAC /* Supporting Files */,
 			);
 			path = "Love Places";
@@ -132,6 +130,8 @@
 		8894B9511C8744FE00625DAC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8894B9601C8744FE00625DAC /* Assets.xcassets */,
+				8894B9621C8744FE00625DAC /* LaunchScreen.storyboard */,
 				8894B9541C8744FE00625DAC /* AppDelegate.h */,
 				8894B9551C8744FE00625DAC /* AppDelegate.m */,
 				8894B9651C8744FE00625DAC /* Info.plist */,
@@ -237,6 +237,7 @@
 				TargetAttributes = {
 					8894B94D1C8744FE00625DAC = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8XXPL76R7U;
 					};
 					8894B9691C8744FE00625DAC = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -491,6 +492,7 @@
 			baseConfigurationReference = 0A9B01C6E10E8682CE6673B1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Love Places/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "menghan.xyz.Love-Places";
@@ -503,6 +505,7 @@
 			baseConfigurationReference = DEF5054555A9221B98F6B77C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Love Places/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "menghan.xyz.Love-Places";

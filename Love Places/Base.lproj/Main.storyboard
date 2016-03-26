@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UFe-sd-N7P">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Love-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -17,42 +18,114 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa1-FZ-jkL">
-                                <rect key="frame" x="165" y="334" width="109" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAV-u6-fkK">
-                                <rect key="frame" x="183" y="260" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-ok-swt">
-                                <rect key="frame" x="192" y="389" width="94" height="30"/>
-                                <state key="normal" title="Current Place"/>
-                                <connections>
-                                    <action selector="getCurrentPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RQu-TR-Z9W"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuU-EY-S2T">
-                                <rect key="frame" x="192" y="432" width="85" height="30"/>
+                                <rect key="frame" x="152" y="518" width="85" height="30"/>
                                 <state key="normal" title="Pick A Place"/>
                                 <connections>
                                     <action selector="pickPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jMz-Cg-FLU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAV-u6-fkK">
+                                <rect key="frame" x="254" y="290" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oa1-FZ-jkL">
+                                <rect key="frame" x="21" y="522" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LM-ok-swt">
+                                <rect key="frame" x="143" y="493" width="94" height="30"/>
+                                <state key="normal" title="Current Place"/>
+                                <connections>
+                                    <action selector="getCurrentPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RQu-TR-Z9W"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvY-7G-fnD" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lvY-7G-fnD" secondAttribute="bottom" id="DxT-Mv-fTY"/>
+                            <constraint firstItem="lvY-7G-fnD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ezz-dY-Zwl"/>
+                            <constraint firstItem="lvY-7G-fnD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Hus-WB-7r4"/>
+                            <constraint firstItem="lvY-7G-fnD" firstAttribute="centerX" secondItem="mAV-u6-fkK" secondAttribute="centerX" id="hPZ-2V-vuY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lvY-7G-fnD" secondAttribute="trailing" constant="-20" id="hPq-5l-dwv"/>
+                            <constraint firstItem="mAV-u6-fkK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ib7-KD-Sin"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Love" id="JmH-pi-6La"/>
                     <connections>
                         <outlet property="addressLabel" destination="oa1-FZ-jkL" id="XJl-YD-1kV"/>
+                        <outlet property="mapView" destination="lvY-7G-fnD" id="98o-SL-Jt2"/>
                         <outlet property="nameLabel" destination="mAV-u6-fkK" id="7Ch-CQ-fNw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="158" y="95"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="u8S-jL-3a2">
+            <objects>
+                <tabBarController id="UFe-sd-N7P" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Cq1-ON-4pA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Eqd-kf-tyr"/>
+                        <segue destination="eWJ-1a-MyX" kind="relationship" relationship="viewControllers" id="Euc-54-ilh"/>
+                        <segue destination="HhN-et-KtM" kind="relationship" relationship="viewControllers" id="qFV-oi-66B"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kit-ca-W6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736" y="457"/>
+        </scene>
+        <!--Places-->
+        <scene sceneID="mMa-2p-ejY">
+            <objects>
+                <viewController id="eWJ-1a-MyX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zr6-1t-Zvt"/>
+                        <viewControllerLayoutGuide type="bottom" id="oSa-ia-wfx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1kc-xK-pSx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Places" id="dm7-ha-NMO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URc-Tr-NBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="746"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="wk0-zE-SBv">
+            <objects>
+                <viewController id="HhN-et-KtM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hqx-iT-h1e"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yw1-c0-gwU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TJF-nH-zdj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" id="ev7-Zv-Euf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4B-bJ-ZdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182" y="1644"/>
         </scene>
     </scenes>
 </document>

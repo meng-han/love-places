@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-@import GoogleMaps;
 
 @interface ViewController ()
 // Instantiate a pair of UILabels in Interface Builder
@@ -26,6 +25,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     _placesClient = [[GMSPlacesClient alloc] init];
+    
+    
+    //36.546564,116.8337803
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:36.546564 longitude:116.8337803 zoom:9];
+    
+    
+    //self.mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    [self.mapView setCamera:camera];
+    self.mapView.myLocationEnabled = YES;
+    
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = CLLocationCoordinate2DMake(36.546564, 116.8337803);
+    marker.title = @"Susie";
+    marker.snippet = @"Baby";
+    marker.map = self.mapView;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,6 +89,8 @@
                 self.addressLabel.text = [[place.formattedAddress componentsSeparatedByString:@", "]
                                           componentsJoinedByString:@"\n"];
             }
+        } else {
+            NSLog(@"No current place");
         }
     }];
 }
