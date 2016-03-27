@@ -18,9 +18,8 @@
 {
     GMSPlacesClient *_placesClient;
     GMSPlacePicker *_placePicker;
-
-
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +33,8 @@
     //self.mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     [self.mapView setCamera:camera];
     self.mapView.myLocationEnabled = YES;
+    self.mapView.settings.myLocationButton = YES;
+    self.mapView.settings.compassButton = YES;
     
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(36.546564, 116.8337803);
@@ -47,6 +48,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)pickPlace:(UIButton *)sender {
     CLLocationCoordinate2D center = CLLocationCoordinate2DMake(51.5108396, -0.0922251);
     CLLocationCoordinate2D northEast = CLLocationCoordinate2DMake(center.latitude + 0.001, center.longitude + 0.001);
@@ -66,33 +68,22 @@
             NSLog(@"Place name %@", place.name);
             NSLog(@"Place address %@", place.formattedAddress);
             NSLog(@"Place attributions %@", place.attributions.string);
+            GMSCameraPosition *camera = [GMSCameraPosition cameraWithTarget:place.coordinate zoom:20];
+            [self.mapView setCamera:camera];
+            
+            
+            GMSMarker *marker = [[GMSMarker alloc] init];
+            marker.position = place.coordinate;
+            marker.title = place.name;
+            marker.snippet = place.formattedAddress;
+            marker.map = self.mapView;
+            
+            
         } else {
             NSLog(@"No place selected");
         }
     }];
 }
 
-- (IBAction)getCurrentPlace:(UIButton *)sender {
-    [_placesClient currentPlaceWithCallback:^(GMSPlaceLikelihoodList *placeLikelihoodList, NSError *error){
-        if (error != nil) {
-            NSLog(@"Pick Place error %@", [error localizedDescription]);
-            return;
-        }
-        
-        self.nameLabel.text = @"No current place";
-        self.addressLabel.text = @"";
-        
-        if (placeLikelihoodList != nil) {
-            GMSPlace *place = [[[placeLikelihoodList likelihoods] firstObject] place];
-            if (place != nil) {
-                self.nameLabel.text = place.name;
-                self.addressLabel.text = [[place.formattedAddress componentsSeparatedByString:@", "]
-                                          componentsJoinedByString:@"\n"];
-            }
-        } else {
-            NSLog(@"No current place");
-        }
-    }];
-}
 
 @end
